@@ -24,8 +24,8 @@ body{
 header{
     font-family: var(--fonte1);
     text-align: center;
-    min-width: 150px;
     margin-bottom: 40px;
+    width: 100vw;
 }
 
 header h1{
@@ -57,16 +57,31 @@ main p{
     padding-top: 110px;
     padding-left: 30px;
     line-height: 2em;
+    width: 100vw;
 }
 
- .imagem{
-    background-image: url(imagens/background001.jpg);
-    background-repeat: repeat;
-    background-attachment: scroll;
+div.normal{
+    width: 100vw;
+}
+
+.imagem{
     padding-top: 90px;
     padding-left: 30px;
     padding-bottom: 90px;
-   
+}
+
+div#joaninha{
+    background-image: url(./imagens/background001.jpg);
+    background-size: cover;
+    background-position: right center;
+    background-attachment: fixed;
+}
+
+div#livro{
+    background-image: url(./imagens/background002.jpg);
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 div.imagem > p{
@@ -78,5 +93,7 @@ div.imagem > p{
 }
 
 footer{
-    font-family: var(--fonte1)
+    font-family: var(--fonte1);
+    padding: 10px;
+    text-align: center;
 }
